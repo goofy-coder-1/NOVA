@@ -1,4 +1,7 @@
 #School Database
+#List = []
+# tuple = ()
+# set = {}
 
 Student = {
     "Grade_ten": {
@@ -46,10 +49,13 @@ while True:
         for student_key, student_value in grade_value.items():
             if response == student_value["Name"].lower():
                print(f"Student found in {grade_keys}")
+               print("-------Student details----------")
                print(f"{student_value['Name']}'s student id is {student_value['Student_id']}") 
                print(f"{student_value['Name']}'s Father is {student_value['Parents']['Father']}") 
                print(f"{student_value['Name']}'s Mother is {student_value['Parents']['Mother']}") 
                print(f"{student_value['Name']}'s Major is {student_value['Major']}") 
+               print("--------------------------------")
+               print("--------------------------------")
                found = True
                break
             if found:
@@ -62,5 +68,3 @@ while True:
       continue
     else:
       break
-
-print(len(Student))
