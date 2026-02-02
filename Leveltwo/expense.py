@@ -7,12 +7,21 @@ print("Through this program, we will help you track your expenses\n")
 items = {
     "apple": {"Price": 200, "Group": "Fruit"},
     "banana": {"Price": 2200, "Group": "Fruit"},
-    "matcha": {"Price": 2000, "Group": "Fruit"},
+    "matcha": {"Price": 2000, "Group": "beverage"},
     "date": {"Price": 2500, "Group": "Fruit"},
     "chocolate": {"Price": 100, "Group": "Fruit"},
     "pizza": {"Price": 20000, "Group": "Fruit"},
     "burger": {"Price": 200, "Group": "Fruit"},
-    "snacks": {"Price": 1500, "Group": "Fruit"}
+    "snacks": {"Price": 1500, "Group": "Fruit"},
+    "thakali": {"Price": 600, "Group": "Fruit"},
+    "meatgolden": {"Price": 15000, "Group": "Fruit"},
+    "steak": {"Price": 5000, "Group": "Fruit"},
+    "water": {"Price": 1000, "Group": "beverage"},
+    "beverage": {"Price": 500, "Group": "beverage"},
+    "momo": {"Price": 600, "Group": "Fruit"},
+    "skymandu_beer": {"Price": 5000, "Group": "Beverage"},
+    "keema": {"Price": 7000, "Group": "Fruit"},
+    "tea": {"Price": 150, "Group": "beverage"}
 }
 
 salaries = []
