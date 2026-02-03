@@ -21,6 +21,6 @@ while True:
       
       
     if is_found:
-        print("Item found")
+        print("Item found on the database")
     else:
         print("Item not found")
