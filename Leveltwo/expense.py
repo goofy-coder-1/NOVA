@@ -71,7 +71,7 @@ while True:
         else:
             print(f"{item} not found in items list")
 
-    print(f"\nTotal price of recorded expenses: {total_price}")
+    print(f"\nThe Total price of recorded expenses: {total_price}")
 
     # Check if expenses exceed available money
     remaining = total_available - total_price
