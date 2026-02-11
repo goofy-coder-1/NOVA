@@ -12,15 +12,23 @@
 #             print("found odd number")
 
 student = {
-    "Ujjwal": {"grade": "bachelor", "age": "20"}
+    "ujjwal": {"grade": "bachelor", "age": "20"},
+    "aayush": {"grade": "undergrad", "age": "19"}
 }
 
-response = input("What do you like to know about the student?: ").lower()
+while True:
+    response = input("Which student are you searching for?: ").lower().strip()
 
-match response:
-    case "grade":
-        for hello_key, hello_value in student.items():
-            print(f"The student is in {hello_value['grade']}")
-    case "age":
-        for hello_key, hello_value in student.items():
-            print(f"The student is {hello_value['age']}")
+    if response in student:
+        print("student found here")
+        print("----------------")
+        print(f"Grade: {student[response]['grade']}")
+        print(f"Age: {student[response]['age']}")
+        print("----------------")
+    else:
+        print("Student not found")
+
+    choice = input("You want to do this again?(y/n): ").lower()
+    if choice != 'y':
+        print("Bye Fam")
+        break
