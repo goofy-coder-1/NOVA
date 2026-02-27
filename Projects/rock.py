@@ -5,8 +5,8 @@ while True:
     print("Program for rock paper scissor game\n")
 
     options = ["rock", "paper", "scissor"]
-    choice = input("Enter one among rock, paper, and scissor: ").lower()
-    user_choice = choice
+    your = input("Enter one among rock, paper, and scissor: ").lower()
+    user_choice = your
 
     computer_choice = random.choice(options)
     print(f"Computer choose {computer_choice}")
