@@ -25,6 +25,38 @@ while True:
         break
 
 # Display the final results
-print("\n--- Final Student List ---")
+while True:
+    print("------Student Search----------")
+    student_name = input("Enter the name of the student: ")
+
+    found = False
+
+    for student_value in student_list:
+        if student_value["name"].lower() == student_name.lower():
+            print(f"Student found: {student_value['name']} | GPA: {student_value['gpa']}")
+            found = True
+            break
+
+    if not found:
+        print("Student not found")
+
+    choice = input("Do you want to continue? (y/n): ").lower()
+    if choice != 'y':
+        print("Bye Bye")
+        break
+
+delete = input("Enter the name of the student you want to delete: ")
+
+found = False
+
 for student in student_list:
-    print(f"Student: {student['name']} | GPA: {student['gpa']}")
+    if student["name"].lower() == delete.lower():
+        student_list.remove(student)
+        print(f"{delete} has been removed.")
+        found = True
+        break
+
+if not found:
+    print("Student not found.")
+
+print(student_list)
