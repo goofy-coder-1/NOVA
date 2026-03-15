@@ -1,6 +1,5 @@
 #code to generate a number and let user guess it
 import random
-import math
 import time
 
 print("Program for number guessing")
